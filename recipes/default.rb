@@ -10,10 +10,6 @@
 # MySQL
 log "Install MySQL"
 package "libmysqlclient-dev"
-mysql_service 'default' do
-  initial_root_password '12345678'
-  action [:create, :start]
-end
 
 # Install Ruby
 log "Compile, install and setup Ruby"
