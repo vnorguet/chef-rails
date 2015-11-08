@@ -15,6 +15,7 @@ mysql_service 'rails' do
   initial_root_password '12345678'
   action [:create, :start]
 end
+package "libmysqlclient-dev"
 
 # Install Ruby
 log "Compile, install and setup Ruby"
