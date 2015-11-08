@@ -9,13 +9,11 @@
 
 # MySQL
 log "Install MySQL"
-mysql_service 'rails' do
-  port '3306'
-  # version '5.5'
+package "libmysqlclient-dev"
+mysql_service 'default' do
   initial_root_password '12345678'
   action [:create, :start]
 end
-package "libmysqlclient-dev"
 
 # Install Ruby
 log "Compile, install and setup Ruby"
