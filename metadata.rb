@@ -4,7 +4,7 @@ maintainer_email 'YOUR_EMAIL'
 license          'All rights reserved'
 description      'Installs/Configures rails'
 long_description 'Installs/Configures rails'
-version          '0.1.4'
+version          '0.1.5'
 
 depends "apt"
 # Add mysql

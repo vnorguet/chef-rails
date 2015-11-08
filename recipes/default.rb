@@ -9,7 +9,14 @@
 
 # MySQL
 log "Install MySQL"
-package "libmysqlclient-dev"
+# package "libmysqlclient-dev"
+# Install mysql-client and dev libs
+mysql_service 'default' do
+  action [:create, :start]
+end
+mysql_client 'default' do
+  action [:create, :start]
+end
 
 # Install Ruby
 log "Compile, install and setup Ruby"
