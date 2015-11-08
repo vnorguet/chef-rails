@@ -20,4 +20,3 @@ end
 log "Compile, install and setup Ruby"
 include_recipe "ruby_build"
 include_recipe "ruby_rbenv::user"
-include_recipe "ruby_rbenv::vagrant"
